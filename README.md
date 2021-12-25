@@ -16,3 +16,7 @@ The general notion of the program is as follows:
     * Low risk ventures result in a change within +/-4% of the initial balance.
     * Medium risk ventures result a change within +/-8% of the initial balance. 
     * High risk ventures result a change within +/-15% of the initial balance.
+
+* In the main program, an interface is provided to the user, allowing them to access these functions, as well as:
+ * Provide a way to convert a Current Account into an Investment Account.
+ * If the balance of an Investment Account falls below the threshold (>£10,000), the account is downgraded to a Current Account.
