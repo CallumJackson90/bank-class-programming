@@ -4,8 +4,8 @@ A simulation of a banking command-line application to practice OOP in Python.
 This python mini-project was created to practice creating classes and using inheritance in a python program. 
 The general notion of the program is as follows:
 * Create a parent class, 'Account', that contains methods required for the basic operation of a 'bank account':
-  *  Create a json file, creating a unique id number and assigning a pin and empty balance to new accounts.
-  *  Check if such a json file exists, and load it in lieu of creating a new one. 
+  *  Create a JSON file, create a unique id number and assign a pin and empty balance to new accounts.
+  *  Check if such a JSON file exists, and load it instead of creating a new one. 
   *  Methods to allow a user to deposit cash into the account, change their pin number, or check their balance.
 
 
@@ -14,10 +14,10 @@ The general notion of the program is as follows:
 
 
 * A second subclass, 'InvestmentAccount', inheriting from 'CurrentAccount' to utilise the withdrawal functionality as well as adding:
-  * A method to simulate investing the entirety of an account 'balance' into Low, Medium, and High risk ventures.
-    * Low risk ventures result in a change within +/-4% of the initial balance.
-    * Medium risk ventures result a change within +/-8% of the initial balance. 
-    * High risk ventures result a change within +/-15% of the initial balance.
+  * A method to simulate investing the entirety of an account 'balance' into Low, Medium, and High-risk ventures.
+    * Low-risk ventures result in a change within +/-4% of the initial balance.
+    * Medium risk ventures result in a change within +/-8% of the initial balance. 
+    * High-risk ventures result in a change within +/-15% of the initial balance.
 
 
 * In the main program, an interface is provided to the user, allowing them to access these functions, as well as:
@@ -31,8 +31,8 @@ Below are some screenshots of the working code to highlight particular areas of 
 
 
 
-This image shows account generation, after entering an id that did not exist, the program created a new Account, and provided us with a random pin.
-It also highlghts the menu presented to the user after getting their Account set up.
+This image shows account generation, after entering an id that did not exist, the program created a new Account and provided us with a random pin.
+It also highlights the menu presented to the user after getting their Account set up.
 
 ![image](https://user-images.githubusercontent.com/74067072/147395370-a0c00f21-be8e-40fb-a5e1-8e19612f0532.png)
 
@@ -62,7 +62,7 @@ We increase our risk tolerance, in the hopes of increasing returns from the simu
 
 ![image](https://user-images.githubusercontent.com/74067072/147395879-82ee9fcb-ed4d-46ef-8ce2-a516c17035d7.png)
 
-Unfortunately we were quite unlucky with the markets, losing 6.65% on our investments. As such, our account has been downgraded to a 'Current Account'
+Unfortunately, we were quite unlucky with the markets, losing 6.65% on our investments. As such, our account has been downgraded to a 'Current Account'
 
 
-And that encompasses the majority of the program as it stands. In the future I may explore adding a third account, a Business Account that cannot be withdrawn from, generates invoices, and must have an additional security measure, mimicking a 2FA, to conduct any investments. Mostly, though, this experience was designed to apply what I have learned about Object-Oriented Programming.
+And that encompasses the majority of the program as it stands. In the future I may explore adding a third account, a Business Account that cannot be withdrawn from generates invoices, and must have an additional security measure, mimicking a 2FA, to conduct any investments. Mostly, though, this experience was designed to apply what I have learned about Object-Oriented Programming.
